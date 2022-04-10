@@ -17,8 +17,6 @@ builder.Services.AddOcelot().AddCacheManager(settings => settings.WithDictionary
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
-
 await app.UseOcelot();
 
 app.Run();
