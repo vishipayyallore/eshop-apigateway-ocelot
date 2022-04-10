@@ -7,4 +7,9 @@
     <RootNamespace>ApiGateway_Ocelot</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" />
+    <PackageReference Include="Ocelot" Version="18.0.0" />
+  </ItemGroup>
+
 </Project>
