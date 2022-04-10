@@ -39,7 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B61D9C67
 		Tests\a.txt = Tests\a.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway-Ocelot", "Source\ApiGateway-Ocelot\ApiGateway-Ocelot.csproj", "{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Ocelot", "Source\ApiGateway-Ocelot\ApiGateway.Ocelot.csproj", "{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
