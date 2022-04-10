@@ -1,45 +1,45 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5010"
+    "BaseUrl": "https://localhost:7001"
   },
   "Routes": [
-    //Catalog API
+    //Products API
     {
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "8000"
+          "Port": "7265"
         }
       ],
-      "DownstreamPathTemplate": "/api/v1/Catalog",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/v1/Products",
+      "DownstreamScheme": "https",
       "FileCacheOptions": { "TtlSeconds": 30 },
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
-      "UpstreamPathTemplate": "/Catalog"
+      "UpstreamPathTemplate": "/Products"
     },
     {
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "8000"
+          "Host": "products.api",
+          "Port": "80"
         }
       ],
-      "DownstreamPathTemplate": "/api/v1/Catalog/{id}",
+      "DownstreamPathTemplate": "/api/v1/Products/{id}",
       "DownstreamScheme": "http",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "UpstreamPathTemplate": "/Catalog/{id}"
+      "UpstreamPathTemplate": "/Products/{id}"
     },
     {
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "8000"
+          "Host": "products.api",
+          "Port": "80"
         }
       ],
-      "DownstreamPathTemplate": "/api/v1/Catalog/GetProductByCategory/{category}",
+      "DownstreamPathTemplate": "/api/v1/Products/GetProductByCategory/{category}",
       "DownstreamScheme": "http",
       "UpstreamHttpMethod": [ "GET" ],
-      "UpstreamPathTemplate": "/Catalog/GetProductByCategory/{category}"
+      "UpstreamPathTemplate": "/Products/GetProductByCategory/{category}"
     }
   ]
 }
