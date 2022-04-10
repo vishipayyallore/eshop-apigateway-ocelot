@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D4AB128-B9F2-4DE2-8ED6-78A0912B8B9A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{847CEFD2-5BCB-467F-9FA2-DFE9EC21E92E}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\a.txt = Deploy\a.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{67569E11-91DF-4CD7-BBEA-C3004D50E83D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{8CEB0E68-7098-4A84-B1A6-5FA1E6653D3A}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Images\a.txt = Documentation\Images\a.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sessions", "Sessions", "{145A71F4-36D6-46CA-BBC7-9EA232E23201}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Sessions\a.txt = Documentation\Sessions\a.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A84681E6-EB5F-421D-B592-CE17E36D77FA}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\a.txt = Scripts\a.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{816667A0-DFAC-4984-9CE0-7996D66AEABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B61D9C67-A036-4067-B9AD-247F3CAD7607}"
+	ProjectSection(SolutionItems) = preProject
+		Tests\a.txt = Tests\a.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Ocelot", "Source\ApiGateway-Ocelot\ApiGateway.Ocelot.csproj", "{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CEB0E68-7098-4A84-B1A6-5FA1E6653D3A} = {67569E11-91DF-4CD7-BBEA-C3004D50E83D}
+		{145A71F4-36D6-46CA-BBC7-9EA232E23201} = {67569E11-91DF-4CD7-BBEA-C3004D50E83D}
+		{3EAD38D2-DCE3-4A4C-A186-ED05FEE3BCFB} = {816667A0-DFAC-4984-9CE0-7996D66AEABE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18F403C8-1BC8-42AA-AF53-4DCEDCBDFF3E}
+	EndGlobalSection
+EndGlobal
