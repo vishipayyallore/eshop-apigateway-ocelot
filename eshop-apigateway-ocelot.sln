@@ -19,7 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{8CEB0E68-7098-4A84-B1A6-5FA1E6653D3A}"
 	ProjectSection(SolutionItems) = preProject
-		Documentation\Images\a.txt = Documentation\Images\a.txt
+		Documentation\Images\OcelotApiGW_Products.PNG = Documentation\Images\OcelotApiGW_Products.PNG
+		Documentation\Images\Serilog_LogFile1.PNG = Documentation\Images\Serilog_LogFile1.PNG
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sessions", "Sessions", "{145A71F4-36D6-46CA-BBC7-9EA232E23201}"

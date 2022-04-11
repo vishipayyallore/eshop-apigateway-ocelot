@@ -1,28 +1,40 @@
-﻿{
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:1347",
-      "sslPort": 44300
-    }
-  },
-  "profiles": {
-    "ApiGateway.OcelotGw": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "applicationUrl": "https://localhost:7001;http://localhost:5001",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+{
+    "iisSettings": {
+        "anonymousAuthentication": true,
+        "iisExpress": {
+            "applicationUrl": "http://localhost:1347",
+            "sslPort": 44300
+        },
+        "windowsAuthentication": false
     },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+    "profiles": {
+        "ApiGateway.OcelotGw": {
+            "applicationUrl": "https://localhost:7001;http://localhost:5001",
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchBrowser": true,
+            "launchUrl": "Products"
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Docker"
+            },
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/Products",
+            "publishAllPorts": true,
+            "useSSL": true
+        },
+        "IIS Express": {
+            "commandName": "IISExpress",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchUrl": "Products"
+        }
     }
-  }
 }
