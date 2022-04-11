@@ -10,17 +10,10 @@ builder.WebHost.ConfigureAppConfiguration((hostingContext, config) =>
     config.AddJsonFile($"./Configuration/ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true);
 });
 
-//builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
-//builder.Logging.AddConsole();
-//builder.Logging.AddDebug();
-
-string outputTemplate = "{Timestamp:yyyy-MM-dd HH:mm: ss.fff} [{Level}] { Message} { NewLine} { Exception}";
-
 // Add services to the container.
 var logger = new LoggerConfiguration()
     .WriteTo.Debug()
     .WriteTo.Console()
-    //.WriteTo.File("./Logs/Demo.txt", rollingInterval: RollingInterval.Day, outputTemplate: outputTemplate)
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
     .CreateLogger();
