@@ -1,45 +1,45 @@
 {
-  "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:5001"
-  },
-  "Routes": [
-    //Products API
-    {
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": "7265"
-        }
-      ],
-      "DownstreamPathTemplate": "/api/v1/Products",
-      "DownstreamScheme": "https",
-      "FileCacheOptions": { "TtlSeconds": 30 },
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
-      "UpstreamPathTemplate": "/Products"
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5001"
     },
-    {
-      "DownstreamHostAndPorts": [
+    "Routes": [
+        //Products API
         {
-          "Host": "products.api",
-          "Port": "80"
-        }
-      ],
-      "DownstreamPathTemplate": "/api/v1/Products/{id}",
-      "DownstreamScheme": "http",
-      "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "UpstreamPathTemplate": "/Products/{id}"
-    },
-    {
-      "DownstreamHostAndPorts": [
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": "7265"
+                }
+            ],
+            "DownstreamPathTemplate": "/api/v1/Products",
+            "DownstreamScheme": "https",
+            "FileCacheOptions": { "TtlSeconds": 30 },
+            "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+            "UpstreamPathTemplate": "/Products"
+        },
         {
-          "Host": "products.api",
-          "Port": "80"
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "products.api",
+                    "Port": "80"
+                }
+            ],
+            "DownstreamPathTemplate": "/api/v1/Products/{id}",
+            "DownstreamScheme": "http",
+            "UpstreamHttpMethod": [ "GET", "DELETE" ],
+            "UpstreamPathTemplate": "/Products/{id}"
+        },
+        {
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "products.api",
+                    "Port": "80"
+                }
+            ],
+            "DownstreamPathTemplate": "/api/v1/Products/GetProductByCategory/{category}",
+            "DownstreamScheme": "http",
+            "UpstreamHttpMethod": [ "GET" ],
+            "UpstreamPathTemplate": "/Products/GetProductByCategory/{category}"
         }
-      ],
-      "DownstreamPathTemplate": "/api/v1/Products/GetProductByCategory/{category}",
-      "DownstreamScheme": "http",
-      "UpstreamHttpMethod": [ "GET" ],
-      "UpstreamPathTemplate": "/Products/GetProductByCategory/{category}"
-    }
-  ]
+    ]
 }

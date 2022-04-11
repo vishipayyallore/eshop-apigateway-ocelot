@@ -1,14 +1,14 @@
 {
     "GlobalConfiguration": {
-        "BaseUrl": "https://localhost:7001"
+        "BaseUrl": "http://localhost:5001"
     },
     "Routes": [
         //Products API
         {
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": "7265"
+                    "Host": "172.17.0.4",
+                    "Port": "49155"
                 }
             ],
             "DownstreamPathTemplate": "/api/v1/Products",
