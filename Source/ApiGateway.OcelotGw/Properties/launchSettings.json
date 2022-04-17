@@ -21,7 +21,7 @@
         "Docker": {
             "commandName": "Docker",
             "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Docker"
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "launchBrowser": true,
             "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/Products",

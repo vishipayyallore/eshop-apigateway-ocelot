@@ -7,12 +7,16 @@
         {
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "localhost",
-                    "Port": "7265"
+                    //"Host": "localhost",
+                    //"Port": "7265",
+                    //"Host": "localhost",
+                    //"Port": "49155"
+                    "Host": "172.17.0.4",
+                    "Port": "80"
                 }
             ],
             "DownstreamPathTemplate": "/api/v1/Products",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "FileCacheOptions": { "TtlSeconds": 30 },
             "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
             "UpstreamPathTemplate": "/Products"

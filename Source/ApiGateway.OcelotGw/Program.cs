@@ -2,6 +2,9 @@ using Ocelot.DependencyInjection;
 using Ocelot.Cache.CacheManager;
 using Ocelot.Middleware;
 using Serilog;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
