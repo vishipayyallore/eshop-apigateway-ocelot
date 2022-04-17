@@ -7,8 +7,8 @@
         {
             "DownstreamHostAndPorts": [
                 {
-                    "Host": "172.17.0.4",
-                    "Port": "49155"
+                    "Host": "172.17.0.3",
+                    "Port": "443"
                 }
             ],
             "DownstreamPathTemplate": "/api/v1/Products",
