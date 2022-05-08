@@ -1,16 +1,13 @@
-using Ocelot.DependencyInjection;
 using Ocelot.Cache.CacheManager;
+using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Serilog;
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureAppConfiguration((hostingContext, config) =>
 {
-    config.AddJsonFile($"./Configuration/ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true);
+    _ = config.AddJsonFile($"./Configuration/ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true);
 });
 
 // Add services to the container.
